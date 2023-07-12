@@ -2,7 +2,7 @@ import Navbar from "./extra/components/Navbar";
 
 function App() {
   return (
-  <div className="bg-[#313c49] h-screen">
+  <div className="bg-[#19181a] h-screen">
  
     <Navbar />
 
