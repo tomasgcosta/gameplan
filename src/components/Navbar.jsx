@@ -1,37 +1,36 @@
-import React from 'react'
-import logo from '../assets/logo.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 import { FiMenu } from "react-icons/fi";
 import { HiDownload } from "react-icons/hi";
 
 const Navbar = () => {
   return (
     <div className="bg-gradient-to-b from-[#6a696b] to-[#262527]">
-      <div className="flex items-center  max-w-[70vw] mx-auto relative">
+      <div className="mx-[3rem] flex items-center max-w-[80vw] relative">
         {/* Left */}
-        <div className="flex items-center justify-center  lg:justify-start py-2 px-2 lg:py-6 lg:px-8 w-full lg:w-auto   ">
+        <div className="flex items-center justify-center  lg:justify-start py-4 px-4 lg:py-6 lg:px-8 w-full lg:w-auto   ">
           <div className="lg:hidden left-4 absolute text-white">
             <FiMenu className="text-[30px]" />
           </div>
-
-          <div className="flex items-center  text-[#c5c3c0] font-semibold text-[26px]  ">
-            <img src={logo} className="w-12 h-12 mr-2" />
-            <p>Games</p>
+          <Link to='/'>
+          <div className="flex items-center hover:text-white text-[#c5c3c0] font-semibold text-[1.5rem] duration-100 ease-out ">
+         <img src={logo} className="w-12 h-12 mr-2 " />
+            <span className=''>Games</span>
           </div>
+          </Link>
         </div>
         {/* Middle */}
         <div className="hidden lg:flex pl-10">
-          <ul className="text-[#c5c3c0] text-[13px] flex  gap-5">
+          <ul className="font-semibold text-[#c5c3c0] text-[13px] flex gap-6">
             <li>
-              <p className="">STORE</p>
+              <Link to="/games" className="hover:text-white duration-100 ease-out">GAMES</Link>
             </li>
             <li>
-              <p className="">COMMUNITY</p>
+              <Link to="/community" className="hover:text-white duration-100 ease-out">COMMUNITY</Link>
             </li>
             <li>
-              <p className="">LIBRARY</p>
-            </li>
-            <li>
-              <p className="">SUPPORT</p>
+              <Link to="/contact" className="hover:text-white duration-100 ease-out">CONTACT ME</Link>
             </li>
           </ul>
         </div>
@@ -60,4 +59,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;
