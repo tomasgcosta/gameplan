@@ -32,11 +32,13 @@ function App() {
         <div className="lg:max-w-[90vw] xl:max-w-[80vw] mx-auto ">
         <Featured game={game} />
         </div>
+        <div className="lg:max-w-[90vw] xl:max-w-[80vw] mx-auto ">
         <Routes>
           <Route path="/games" element={<Games />} />
           <Route path="/community" element={<Community />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        </div>
         <Footer />
       </Router>
     </div>

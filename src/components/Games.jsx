@@ -16,20 +16,19 @@ const Games = () => {
   ];
 
   return (
-    <div className=''>
-      <p className="text-white pt-6 flex pl-[14rem] relative">Our games</p>
-      <div className=" flex justify-center w-auto">
-        <div className="flex flex-row gap-[0.58rem] pt-3">
-          {gameCards.map((card, index) => (
-            <div className='rounded'>
-              <Card key={index} game={card} />
-              </div>
-          ))}
-        </div>
+    <div className="mx-[1rem] mt-[1rem] text-white text-[14px] overflow-hidden">
+    
+      <p>OUR GAMES</p>
+      <div className="flex flex-wrap gap-[0.58rem] pt-3 justify-center">
+        {gameCards.map((card, index) => (
+          <div className="rounded" key={index}>
+            <Card game={card} />
+          </div>
+        ))}
       </div>
     </div>
-
   );
+  
 };
 
 export default Games;

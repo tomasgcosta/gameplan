@@ -17,6 +17,7 @@ const Featured = ({ game }) => {
         <div className="mx-[1rem] mt-[1rem] text-white text-[14px] overflow-hidden">
 
             <p>FEATURED GAME</p>
+
             {/* Featured game card - UNDER CON */}
             <div className="h-full md:h-[24rem] w-full flex flex-col md:flex-row pt-3">
                 <div className="w-full md:w-[65%] h-full flex">
