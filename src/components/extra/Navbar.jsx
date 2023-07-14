@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="absolute text-white  right-10 top-0 text-[12px] lg:flex  items-center mt-2 hidden">
           <div className="flex items-center bg-[#ED5611] px-2 py-1 rounded-[0.2rem]">
             <HiDownload className="mr-2" />
-            <p className=" ">Download Ijji</p>
+            <p className=" ">Download ijji Reactor</p>
           </div>
           <div className=" ml-4 px-2 py-[2px] rounded-[0.5rem] group duration-100 ease-out">
             <p className="text-[#808080] font-semibold group-hover:text-white duration-100 ease-out">
