@@ -2,9 +2,9 @@ import React from 'react';
 
 const Community = () => {
   return (
-    <div>
-      <h1>Community Page</h1>
-      {/* Conteúdo da página da comunidade */}
+    <div className='flex justify-center text-[5rem]'>
+      <span>UNDER CONSTRUCTION!</span>
+     
     </div>
   );
 };

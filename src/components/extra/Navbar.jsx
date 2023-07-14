@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../../assets/logo.png';
 import { FiMenu } from "react-icons/fi";
 import { HiDownload } from "react-icons/hi";
 
@@ -14,10 +14,13 @@ const Navbar = () => {
             <FiMenu className="text-[30px]" />
           </div>
           <Link to='/'>
-          <div className="flex items-center hover:text-white text-[#c5c3c0] font-semibold text-[1.5rem] duration-100 ease-out ">
-         <img src={logo} className="w-12 h-12 mr-2 " />
-            <span className=''>Games</span>
-          </div>
+            <div className='flex items-center'>
+              <img
+                src={logo}
+                className=" w-12 h-12 mr-2"
+                alt="Logo"
+              />
+            </div>
           </Link>
         </div>
         {/* Middle */}
