@@ -10,9 +10,9 @@ const Footer = () => {
     }
 
     return (
-        <div className='flex justify-center px-[11.5rem] py-[2rem]'>
-        <div className='flex flex-row text-white gap-[10rem]'>
-            <div className=''>
+        <div className='flex justify-center px-6 py-4 lg:px-[11.5rem] lg:py-[2rem]'>
+        <div className='flex flex-row text-white'>
+            <div className='pr-4'>
                 <p>ijji was a free multiplayer game portal website. Games hosted at ijji ranged from traditional shooters and MMORPGs to more accessible casual games, all of which were free to download and play, and with the majority featuring competitive multiplayer gameplay. The ijji website opened on July 7, 2006. The American-based game portal has published some well known worldwide titles that include Alliance of Valiant Arms, GunZ, and Soldier Front.
                 <br />
                 On January 5, 2012, NHN Corporation sold 100% stake of ijji to Aeria Games who began to host ijji's core games (GunZ, Soldier Front, and Alliance of Valiant Arms). 

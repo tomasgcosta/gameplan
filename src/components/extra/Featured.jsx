@@ -57,9 +57,9 @@ const Featured = ({ game }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center justify-center md:justify-between pr-4 gap-4 md:gap-0 -mt-4 md:mt-0 pb-2 md:pb-0">
+                    <div className="flex items-center justify-end md:justify-between pr-8 gap-4 md:gap-0 mt-2 md:mt-0 pb-2 md:pb-0">
                         <div className="pl-4 pb-2 ">
-                            <p className="flex items-start text-[14px] md:text-[12px]">{game.price}</p>
+                            <p className="flex items-end text-[14px] md:text-[12px]">{game.price}</p>
                         </div>
 
                     </div>

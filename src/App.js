@@ -26,10 +26,10 @@ function App() {
   };
 
   return (
-    <div className="bg-[#19181a] h-[100vh]">
+    <div className="bg-[#19181a] min-h-screen">
       <Router>
         <Navbar />
-        <div className="lg:max-w-[90vw] xl:max-w-[80vw] mx-auto">
+        <div className="lg:max-w-[90vw] xl:max-w-[80vw] mx-auto ">
         <Featured game={game} />
         </div>
         <Routes>
