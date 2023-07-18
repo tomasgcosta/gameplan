@@ -6,21 +6,25 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import Games from "./components/Games";
-import Community from "./components/Community";
-import Contact from "./components/Contact";
+import Games from "./components/pages/Games";
+import Categories from "./components/pages/Categories";
+import Contact from "./components/pages/Contact";
 import Footer from "./components/extra/Footer";
+
+import featured_game_image from './assets/game_logos/gunz.jpg'
+import {gunz1, gunz2, gunz3, gunz4} from './assets/game_screenshots/'
+import Signup from "./components/extra/Signup";
+import CategoryPage from "./components/extra/CategoryPage";
 
 function App() {
   const game = {
     name: "GunZ the Duel",
-    image:
-      "https://mmoculture.com/wp-content/uploads/2016/03/GunZ-The-Duel.jpg",
+    image: featured_game_image,
     screenshots: [
-      "https://mmoculture.com/wp-content/uploads/2016/03/GunZ-The-Duel.jpg",
-      "https://mmoculture.com/wp-content/uploads/2016/03/GunZ-The-Duel.jpg",
-      "https://mmoculture.com/wp-content/uploads/2016/03/GunZ-The-Duel.jpg",
-      "https://mmoculture.com/wp-content/uploads/2016/03/GunZ-The-Duel.jpg",
+      gunz1,
+      gunz2,
+      gunz3,
+      gunz4,
     ],
     price: "Free to Play",
   };
@@ -29,14 +33,16 @@ function App() {
     <div className="bg-[#19181a] min-h-screen">
       <Router>
         <Navbar />
-        <div className="lg:max-w-[90vw] xl:max-w-[80vw] mx-auto ">
+        <div className="lg:max-w-[80vw] xl:max-w-[80vw] lg:mx-auto">
         <Featured game={game} />
         </div>
-        <div className="lg:max-w-[90vw] xl:max-w-[80vw] mx-auto ">
+        <div className="lg:max-w-[80vw] xl:max-w-[80vw]  lg:mx-auto">
         <Routes>
           <Route path="/games" element={<Games />} />
-          <Route path="/community" element={<Community />} />
+          <Route path="/categories" element={<Categories />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path= "/signup" element={<Signup />} />
+          <Route path= "/category/:title" element={<CategoryPage/>} />
         </Routes>
         </div>
         <Footer />

@@ -1,6 +1,6 @@
 import React from 'react';
-import { LinkedIn } from '../assets/LinkedIn';
-import { Github } from '../assets/github';
+import { LinkedIn } from '../../assets/contact_logos/LinkedIn';
+import { Github } from '../../assets/contact_logos/github';
 
 
 
@@ -8,9 +8,9 @@ import { Github } from '../assets/github';
 const Contact = () => {
   return (
     <div>
-      <div className='text-white flex flex-col items-center text-[2rem] pt-[4rem]'>
+      <div className='text-white flex flex-col items-center text-[2rem] pt-[2rem]'>
         <p>You can find me on:</p>
-        <div className='pt-[8rem] flex flex-row gap-5 '>
+        <div className='pt-[4rem] flex flex-row gap-5 '>
           <div className='items-center'>
             <Github/><a href="https://github.com/tomasgcosta"/>
           </div>
